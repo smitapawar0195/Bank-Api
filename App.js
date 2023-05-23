@@ -8,7 +8,7 @@ const port = 2020
 app.use(cors())
 app.use(express.json())
 mongoose.connect("mongodb://127.0.0.1:27017/").then(() => {
-    console.log('DB is connected successfully!!')
+    console.log('DataBase is connected successfully!!')
 });
 app.get("/", (req, res) => {
     res.send("Welcome......")
